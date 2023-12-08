@@ -21,7 +21,7 @@ def infer_spaces(s):
     Uses dynamic programming to infer the location of spaces in a string
     without spaces.
     """
-    words = open("data/new_words.txt").read().split()
+    words = open("new_words.txt").read().split()
     wordcost = dict((k, log((i + 1) * log(len(words)))) for i, k in enumerate(words))
     nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     for n in nums:
